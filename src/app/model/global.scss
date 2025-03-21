@@ -1,0 +1,30 @@
+html {
+  line-height: var(--line-height);
+  color: var(--text-main);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: var(--background-main);
+}
+
+p {
+  &:not(:last-child) {
+    margin-bottom: 0.5em;
+  }
+}
+
+#root {
+  padding: 30px 0 50px;
+
+  @media (max-width: 575px) {
+    padding: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+}

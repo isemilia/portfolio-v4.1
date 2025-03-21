@@ -1,0 +1,14 @@
+:export {
+  primaryMain: var(--primary-main);
+  primaryDark: var(--primary-dark);
+  primaryDarker: var(--primary-darker);
+
+  secondaryMain: var(--secondary-main);
+  secondaryDark: var(--secondary-dark);
+
+  backgroundMain: var(--background-main);
+  backgroundElevated: var(--background-elevated);
+
+  textMain: var(--text-main);
+  textMuted: var(--text-muted);
+}

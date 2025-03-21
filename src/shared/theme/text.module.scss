@@ -1,0 +1,22 @@
+:export {
+  fontFamily: var(--font-family);
+  lineHeight: var(--line-height);
+
+  h1Size: var(--h1-size);
+  h1Weight: var(--h1-weight);
+
+  h2Size: var(--h2-size);
+  h2Weight: var(--h2-weight);
+
+  h3Size: var(--h3-size);
+  h3Weight: var(--h3-weight);
+
+  bodySize: var(--body-size);
+  bodyWeight: var(--body-weight);
+
+  smallSize: var(--small-size);
+  smallWeight: var(--small-weight);
+
+  extraSmallSize: var(--extra-small-size);
+  extraSmallWeight: var(--extra-small-weight);
+}

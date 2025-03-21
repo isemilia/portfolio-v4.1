@@ -1,14 +1,14 @@
-'use client';
-
 import { TWithChildren } from '@/shared/types/components';
-import { StyledTitle } from '@/ui/elements/title/model/styles';
 import { TTitleVariant } from '@/ui/elements/title/model/types';
 
-const Title: TWithChildren<{ variant?: TTitleVariant }> = ({
-  children,
-  variant = 'h1',
-}) => {
-  return <StyledTitle $variant={variant}>{children}</StyledTitle>;
+import classes from './model/title.module.scss';
+
+const Title: TWithChildren<{
+  variant?: TTitleVariant;
+  component?: TTitleVariant;
+}> = ({ children, variant = 'h1', component = 'h1' }) => {
+  const Component = component;
+  return <Component className={classes[variant]}>{children}</Component>;
 };
 
 export default Title;

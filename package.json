@@ -13,8 +13,7 @@
     "normalize.css": "^8.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-responsive": "^10.0.1",
-    "styled-components": "^6.1.15"
+    "react-responsive": "^10.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -24,7 +23,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.2.1",
     "prettier": "^3.5.3",
-    "sass": "^1.85.1",
+    "sass": "^1.86.0",
     "typescript": "^5"
   }
 }
