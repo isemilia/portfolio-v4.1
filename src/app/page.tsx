@@ -1,4 +1,4 @@
-import Profile from '@/ui/components/profile';
+import Profile from '@/ui/widgets/profile';
 
 export default function Home() {
   return (

@@ -2,9 +2,10 @@ import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 
-import 'normalize.css/normalize.css';
 import { AppContainer, GlobalStyles } from '@/app/model/styles';
 import ThemeProvider from '@/shared/providers/theme-provider';
+
+import 'normalize.css/normalize.css';
 
 const poppins = Poppins({
   weight: ['400', '500', '700'],
@@ -26,8 +27,8 @@ export default function RootLayout({
   return (
     <html lang={'en'}>
       <body className={poppins.className}>
-        <GlobalStyles />
         <ThemeProvider>
+          <GlobalStyles />
           <AppContainer>{children}</AppContainer>
         </ThemeProvider>
       </body>

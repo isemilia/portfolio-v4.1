@@ -1,7 +1,8 @@
 import { FC } from 'react';
+import Title from '@/ui/elements/title';
 
 const Profile: FC = () => {
-  return <>User Profile</>;
+  return <Title>User Profile</Title>;
 };
 
 export default Profile;
