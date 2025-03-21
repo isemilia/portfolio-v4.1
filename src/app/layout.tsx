@@ -4,9 +4,9 @@ import { Poppins } from 'next/font/google';
 
 import 'normalize.css/normalize.css';
 
-import classes from './model/app.module.scss';
+import classes from '@/shared/global/model/app.module.scss';
 import '@/shared/theme/variables.scss';
-import './model/global.scss';
+import '@/shared/global/model/global.scss';
 
 const poppins = Poppins({
   weight: ['400', '500', '700'],
