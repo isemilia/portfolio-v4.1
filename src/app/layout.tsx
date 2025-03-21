@@ -5,7 +5,7 @@ import { Poppins } from 'next/font/google';
 import 'normalize.css/normalize.css';
 
 import classes from './model/app.module.scss';
-import './model/variables.scss';
+import '@/shared/theme/variables.scss';
 import './model/global.scss';
 
 const poppins = Poppins({
