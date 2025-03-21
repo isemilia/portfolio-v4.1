@@ -4,6 +4,7 @@ import { Poppins } from 'next/font/google';
 
 import 'normalize.css/normalize.css';
 import { AppContainer, GlobalStyles } from '@/app/model/styles';
+import ThemeProvider from '@/shared/providers/theme-provider';
 
 const poppins = Poppins({
   weight: ['400', '500', '700'],
@@ -26,7 +27,9 @@ export default function RootLayout({
     <html lang={'en'}>
       <body className={poppins.className}>
         <GlobalStyles />
-        <AppContainer>{children}</AppContainer>
+        <ThemeProvider>
+          <AppContainer>{children}</AppContainer>
+        </ThemeProvider>
       </body>
     </html>
   );

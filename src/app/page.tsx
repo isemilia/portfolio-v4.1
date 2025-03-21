@@ -1,3 +1,9 @@
+import Profile from '@/ui/components/profile';
+
 export default function Home() {
-  return <>Hello World!</>;
+  return (
+    <>
+      <Profile />
+    </>
+  );
 }
