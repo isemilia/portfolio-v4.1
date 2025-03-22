@@ -1,0 +1,6 @@
+.banner {
+  min-height: 200px;
+  // fallback for browsers that do no support relative color syntax yet
+  background: linear-gradient(to bottom, var(--primary-darker), var(--background-main));
+  background: linear-gradient(to bottom, var(--primary-darker), rgba(from var(--background-main) r g b / 50%));
+}
