@@ -20,6 +20,13 @@ const Profile: FC = () => {
             <Text>Front-end developer</Text>
           </div>
         </div>
+        <Text component={'div'}>
+          <p>Passionate about clean code and delightful user experiences ✨</p>
+          <p>
+            Front-end developer. Back-end explorer. UX/UI enthusiast. Creative
+            thinker.
+          </p>
+        </Text>
       </Container>
     </div>
   );
