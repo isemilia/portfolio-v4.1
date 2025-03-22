@@ -1,7 +1,7 @@
-import { TWithChildren } from '@/shared/types/components';
+import { TComponent } from '@/shared/types/components';
 import classes from './model/container.module.scss';
 
-const Container: TWithChildren = ({ children }) => {
+const Container: TComponent<true> = ({ children }) => {
   return <div className={classes.container}>{children}</div>;
 };
 
