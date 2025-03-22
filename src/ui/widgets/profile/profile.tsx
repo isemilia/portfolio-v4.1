@@ -5,6 +5,7 @@ import Text from '@/ui/elements/text';
 import classes from './model/profile.module.scss';
 import photo from './media/photo.jpeg';
 import Container from '@/ui/elements/container';
+import AppLink from '@/ui/elements/app-link';
 
 const Profile: FC = () => {
   return (
@@ -27,6 +28,9 @@ const Profile: FC = () => {
             thinker.
           </p>
         </Text>
+        <div className={classes.links}>
+          <AppLink component={'div'}>Available</AppLink>
+        </div>
       </Container>
     </div>
   );

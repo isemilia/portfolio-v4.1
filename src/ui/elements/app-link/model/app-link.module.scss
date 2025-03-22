@@ -1,0 +1,34 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+  color: var(--text-muted);
+  line-height: 1;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &[data-icon-position='right'] {
+    flex-direction: row-reverse;
+  }
+
+  .icon {
+    display: inline-block;
+  }
+
+  &[data-size='md'] {
+    .icon {
+      height: 20px;
+    }
+  }
+
+  &[data-size='sm'] {
+    .icon {
+      height: 12px;
+    }
+  }
+
+  &:hover {
+    color: var(--text-main);
+  }
+}

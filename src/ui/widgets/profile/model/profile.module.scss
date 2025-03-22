@@ -25,4 +25,11 @@
       object-fit: cover;
     }
   }
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 20px;
+  }
 }
