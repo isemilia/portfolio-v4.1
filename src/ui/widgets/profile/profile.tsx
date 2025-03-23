@@ -6,6 +6,9 @@ import classes from './model/profile.module.scss';
 import photo from './media/photo.jpeg';
 import Container from '@/ui/elements/container';
 import AppLink from '@/ui/elements/app-link';
+import SuitcaseIcon from '@/ui/elements/icons/suitcase-icon';
+import GithubIcon from '@/ui/elements/icons/github-icon';
+import BlueskyIcon from '@/ui/elements/icons/bluesky-icon';
 
 const Profile: FC = () => {
   return (
@@ -17,7 +20,7 @@ const Profile: FC = () => {
             <img src={photo.src} alt={'Avatar'} width={80} height={80} />
           </div>
           <div>
-            <Title className={classes.title}>Emilia</Title>
+            <Title className={classes.title}>Emilia Sonder</Title>
             <Text>Front-end developer</Text>
           </div>
         </div>
@@ -29,7 +32,23 @@ const Profile: FC = () => {
           </p>
         </Text>
         <div className={classes.links}>
-          <AppLink component={'div'}>Available</AppLink>
+          <AppLink component={'div'} icon={<SuitcaseIcon />}>
+            Available
+          </AppLink>
+          <AppLink
+            icon={<GithubIcon />}
+            href={'https://github.com/isemilia'}
+            target={'_blank'}
+          >
+            Github
+          </AppLink>
+          <AppLink
+            icon={<BlueskyIcon />}
+            href={'https://bsky.app/profile/emiliasonder.bsky.social'}
+            target={'_blank'}
+          >
+            Bluesky
+          </AppLink>
         </div>
       </Container>
     </div>

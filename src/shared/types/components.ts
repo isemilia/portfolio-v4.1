@@ -1,4 +1,10 @@
-import { ComponentPropsWithoutRef, ElementType, FC, ReactNode } from 'react';
+import {
+  ComponentPropsWithoutRef,
+  ElementType,
+  FC,
+  ReactNode,
+  SVGProps,
+} from 'react';
 
 export type THTMLProps<T extends keyof HTMLElementTagNameMap> =
   HTMLElementTagNameMap[T];
@@ -27,3 +33,5 @@ export type TComponent<
       : {}) &
     Props
 >;
+
+export type TSVGComponent = FC<SVGProps<SVGSVGElement>>;

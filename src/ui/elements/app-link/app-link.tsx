@@ -30,7 +30,7 @@ const AppLink = <T extends ElementType = 'a'>({
       data-size={size}
       {...props}
     >
-      {icon && <span className={classes.link}>{icon}</span>}
+      {icon && <span className={classes.icon}>{icon}</span>}
       <Text variant={textSize[size] as 'body' | 'sm'}>{children}</Text>
     </Component>
   );
