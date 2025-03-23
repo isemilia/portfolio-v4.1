@@ -13,8 +13,9 @@ export const GET = async () => {
     });
 
     return NextResponse.json({
-      posts: posts.data.feed.map(({ post }) => {
+      data: posts.data.feed.map(({ post }) => {
         return {
+          id: post.cid,
           uri: post.uri,
           createdAt: post.record.createdAt,
           author: {
