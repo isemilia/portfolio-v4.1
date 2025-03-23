@@ -1,0 +1,18 @@
+.navigation {
+  position: relative;
+
+  .buttons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    width: 100%;
+  }
+
+  .indicator {
+    height: 3px;
+    background: var(--primary-main);
+    bottom: -1px;
+    position: absolute;
+    transition: all .3s;
+  }
+}

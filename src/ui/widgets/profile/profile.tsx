@@ -9,6 +9,7 @@ import AppLink from '@/ui/elements/app-link';
 import SuitcaseIcon from '@/ui/elements/icons/suitcase-icon';
 import GithubIcon from '@/ui/elements/icons/github-icon';
 import BlueskyIcon from '@/ui/elements/icons/bluesky-icon';
+import Navigation from '@/ui/components/navigation';
 
 const Profile: FC = () => {
   return (
@@ -50,6 +51,7 @@ const Profile: FC = () => {
             Bluesky
           </AppLink>
         </div>
+        <Navigation className={classes.navigation} />
       </Container>
     </div>
   );
