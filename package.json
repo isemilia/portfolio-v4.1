@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@atproto/api": "^0.14.10",
     "clsx": "^2.1.1",
     "next": "15.2.1",
     "normalize.css": "^8.0.1",
