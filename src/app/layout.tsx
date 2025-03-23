@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <div className={classes.container} id={'root'}>
           <Profile />
-          <Container>{children}</Container>
+          <Container className={classes.children}>{children}</Container>
         </div>
       </body>
     </html>
