@@ -1,7 +1,9 @@
 import { postListSchema } from '@/shared/api/types/posts';
 
 const Page = async () => {
-  const response = await fetch('http:localhost:3000/api/bsky/posts');
+  const url = process.env.API_URL;
+
+  const response = await fetch(`${url}/api/bsky/posts`);
   const result: { data: unknown[] } = await response.json();
 
   const posts = postListSchema.parse(result.data);
