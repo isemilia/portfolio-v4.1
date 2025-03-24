@@ -28,6 +28,36 @@
   }
 
   .body {
+    margin-bottom: 12px;
+  }
 
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .date {
+    color: var(--text-muted);
+  }
+
+  .icon {
+    color: var(--text-muted);
+    width: fit-content;
+    transition: color .3s;
+
+    &:hover {
+      color: var(--text-main);
+    }
+
+    svg {
+      height: 16px;
+    }
   }
 }

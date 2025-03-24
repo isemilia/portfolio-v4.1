@@ -4,10 +4,17 @@ import Title from '@/ui/elements/title';
 import Text from '@/ui/elements/text';
 import { z } from 'zod';
 import { postSchema } from '@/shared/api/types/posts';
+import HeartIcon from '@/ui/elements/icons/heart-icon';
+import AppLink from '@/ui/elements/app-link';
+import CommentIcon from '@/ui/elements/icons/comment-icon';
+import ShareIcon from '@/ui/elements/icons/share-icon';
+import formatDate from '@/shared/utils/format-date';
 
 const Post: TComponent<false, z.infer<typeof postSchema>> = ({
   content,
   author,
+  createdAt,
+  uri,
 }) => {
   return (
     <div className={classes.post}>
@@ -27,6 +34,22 @@ const Post: TComponent<false, z.infer<typeof postSchema>> = ({
       <div className={classes.body}>
         <Text component={'div'} variant={'sm'}>
           {content}
+        </Text>
+      </div>
+      <div className={classes.footer}>
+        <div className={classes.controls}>
+          <AppLink href={uri} target={'_blank'} className={classes.icon}>
+            <HeartIcon />
+          </AppLink>
+          <AppLink href={uri} target={'_blank'} className={classes.icon}>
+            <CommentIcon />
+          </AppLink>
+          <AppLink href={uri} target={'_blank'} className={classes.icon}>
+            <ShareIcon />
+          </AppLink>
+        </div>
+        <Text variant={'xs'} className={classes.date}>
+          {formatDate({ date: createdAt })}
         </Text>
       </div>
     </div>
