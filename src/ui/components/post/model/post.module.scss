@@ -1,0 +1,33 @@
+.post {
+  --avatar-size: 40px;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  .avatar {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 100%;
+    overflow: hidden;
+  }
+
+  .title {
+    margin-bottom: 2px;
+  }
+
+  .subtitle {
+    color: var(--text-muted);
+  }
+
+  .body {
+
+  }
+}
