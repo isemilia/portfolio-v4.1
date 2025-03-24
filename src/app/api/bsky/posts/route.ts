@@ -14,9 +14,12 @@ export const GET = async () => {
 
     return NextResponse.json({
       data: posts.data.feed.map(({ post }) => {
+        const uriParts = post.uri.split('/');
+        const id = uriParts[uriParts.length - 1];
+
         return {
-          id: post.cid,
-          uri: post.uri,
+          id,
+          uri: `https://bsky.app/profile/${post.author.handle}/post/${id}`,
           createdAt: post.record.createdAt,
           author: {
             name: post.author.displayName,
