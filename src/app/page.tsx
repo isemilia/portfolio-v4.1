@@ -1,6 +1,7 @@
 import Title from '@/ui/elements/title';
 import Text from '@/ui/elements/text';
 import Highlight from '@/ui/elements/highlight';
+import Cta from '@/ui/components/cta';
 
 export default function Home() {
   return (
@@ -8,11 +9,11 @@ export default function Home() {
       <Title component={'h2'} variant={'h2'}>
         Hey there!
       </Title>
-      <Text component={'div'} style={{ marginTop: '16px' }}>
+      <Text component={'div'} className={'mt-[16px]'}>
         <p>
           I’m a front-end developer with over three years of experience building
           user-friendly, scalable applications with{' '}
-          <Highlight>TypeScript</Highlight>, <Highlight>React</Highlight>, and
+          <Highlight>TypeScript</Highlight>, <Highlight>React</Highlight>, and{' '}
           <Highlight>Next.js</Highlight>. I enjoy crafting intuitive interfaces,
           optimizing performance, and designing efficient system{' '}
           <Highlight>architectures</Highlight>.
@@ -27,6 +28,7 @@ export default function Home() {
         </p>
         <p>Always open to exciting projects and new challenges!</p>
       </Text>
+      <Cta className={'mt-[30px]'} />
     </div>
   );
 }

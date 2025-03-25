@@ -1,12 +1,14 @@
+@import "tailwindcss";
+
 html {
   line-height: var(--line-height);
   color: var(--text-main);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
+//* {
+//  margin: 0;
+//  padding: 0;
+//}
 
 body {
   background: var(--background-main);
