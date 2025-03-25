@@ -1,37 +1,43 @@
-import { TDynamicProps } from '@/shared/types/components';
+import { TCommonProps, TDynamicProps } from '@/shared/types/components';
 import { ElementType, ReactNode } from 'react';
 import classes from './model/app-link.module.scss';
 import Text from '@/ui/elements/text';
+import clsx from 'clsx';
 
 const AppLink = <T extends ElementType = 'a'>({
   component,
   children,
   icon,
   iconPosition = 'left',
-  size = 'md',
+  iconSize = 'md',
+  className,
   ...props
 }: TDynamicProps<
   T,
   {
     icon?: ReactNode;
     iconPosition?: 'left' | 'right';
-    size?: 'md' | 'sm';
+    iconSize?: 'md' | 'sm' | 'xs';
   }
 >) => {
   const Component = (component || 'a') as ElementType;
-  const textSize = {
-    md: 'body',
-    sm: 'sm',
-  };
+  // const textSize = {
+  //   md: 'body',
+  //   sm: 'sm',
+  //   xs: 'xs'
+  // };
   return (
     <Component
-      className={classes.link}
+      className={clsx(classes.link, className)}
       data-icon-position={iconPosition}
-      data-size={size}
+      data-size={iconSize}
       {...props}
     >
       {icon && <span className={classes.icon}>{icon}</span>}
-      <Text variant={textSize[size] as 'body' | 'sm'}>{children}</Text>
+      <Text component={'span'} className={classes.text}>
+        {/*variant={textSize[size] as 'body' | 'sm'}*/}
+        {children}
+      </Text>
     </Component>
   );
 };

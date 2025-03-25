@@ -10,6 +10,8 @@ export const postSchema = z.object({
     avatar: z.string(),
   }),
   content: z.string(),
+  likeCount: z.number(),
+  replyCount: z.number(),
 });
 
 export const postListSchema = z.array(postSchema);

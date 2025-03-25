@@ -2,30 +2,48 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
-  text-decoration: none;
+  text-decoration: none !important;
   color: var(--text-muted);
   line-height: 1;
   transition: all 0.3s;
   cursor: pointer;
+
+  .text {
+    padding-top: 1px;
+  }
 
   &[data-icon-position='right'] {
     flex-direction: row-reverse;
   }
 
   .icon {
-    display: inline-block;
+    --icon-size: 20px;
+
+    display: grid;
+    place-items: center;
+    height: var(--icon-size);
   }
 
   &[data-size='md'] {
     .icon {
-      height: 20px;
+      --icon-size: 20px;
     }
   }
 
   &[data-size='sm'] {
     .icon {
-      height: 12px;
+      --icon-size: 16px;
     }
+  }
+
+  &[data-size='xs'] {
+    .icon {
+      --icon-size: 12px;
+    }
+  }
+
+  svg {
+    height: 100%;
   }
 
   &:hover {

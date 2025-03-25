@@ -47,17 +47,13 @@
     color: var(--text-muted);
   }
 
-  .icon {
+  .button {
     color: var(--text-muted);
     width: fit-content;
     transition: color .3s;
 
     &:hover {
       color: var(--text-main);
-    }
-
-    svg {
-      height: 16px;
     }
   }
 }

@@ -27,6 +27,8 @@ export const GET = async () => {
             avatar: post.author.avatar,
           },
           content: post.record.text,
+          likeCount: post.likeCount,
+          replyCount: post.replyCount,
         };
       }),
     });

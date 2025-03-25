@@ -15,6 +15,8 @@ const Post: TComponent<false, z.infer<typeof postSchema>> = ({
   author,
   createdAt,
   uri,
+  replyCount,
+  likeCount,
 }) => {
   return (
     <div className={classes.post}>
@@ -38,15 +40,31 @@ const Post: TComponent<false, z.infer<typeof postSchema>> = ({
       </div>
       <div className={classes.footer}>
         <div className={classes.controls}>
-          <AppLink href={uri} target={'_blank'} className={classes.icon}>
-            <HeartIcon />
+          <AppLink
+            href={uri}
+            target={'_blank'}
+            className={classes.button}
+            iconSize={'sm'}
+            icon={<HeartIcon className={classes.icon} />}
+          >
+            {likeCount || null}
           </AppLink>
-          <AppLink href={uri} target={'_blank'} className={classes.icon}>
-            <CommentIcon />
+          <AppLink
+            href={uri}
+            target={'_blank'}
+            className={classes.button}
+            iconSize={'sm'}
+            icon={<CommentIcon className={classes.icon} />}
+          >
+            {replyCount || null}
           </AppLink>
-          <AppLink href={uri} target={'_blank'} className={classes.icon}>
-            <ShareIcon />
-          </AppLink>
+          <AppLink
+            href={uri}
+            target={'_blank'}
+            className={classes.button}
+            iconSize={'sm'}
+            icon={<ShareIcon className={classes.icon} />}
+          ></AppLink>
         </div>
         <Text variant={'xs'} className={classes.date}>
           {formatDate({ date: createdAt })}
