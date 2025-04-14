@@ -16,7 +16,7 @@ const Navigation: TComponent = ({ className }) => {
 
   const links = [
     { href: '/', label: 'About', name: 'about' },
-    // { href: '/skills', label: 'Skills' },
+    { href: '/skills', label: 'Skills', name: 'skills' },
     // { href: '/projects', label: 'Projects' },
     // { href: '/contact', label: 'Contact' },
     { href: '/blog', label: 'Blog', name: 'blog' },

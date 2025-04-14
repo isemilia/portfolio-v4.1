@@ -1,0 +1,18 @@
+.chip {
+  --icon-chip-color: 255, 255, 255;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 28px;
+  background: rgba(var(--icon-chip-color), 0.1);
+
+  .label {
+    line-height: 1;
+  }
+
+  .svg {
+    // width: 20px;
+    height: 20px;
+  }
+}
