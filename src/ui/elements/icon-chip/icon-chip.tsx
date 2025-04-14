@@ -1,7 +1,7 @@
 import { TComponent } from '@/shared/types/components';
 import classes from './model/icon-chip.module.scss';
 import Text from '@/ui/elements/text';
-import hexToRgb from '@/shared/utils/hex-to-rgb';
+import hexToRgb from '../../../shared/utils/functions/hex-to-rgb';
 import { CSSProperties, ReactNode } from 'react';
 import clsx from 'clsx';
 

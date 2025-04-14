@@ -8,7 +8,7 @@ import HeartIcon from '@/ui/elements/icons/heart-icon';
 import AppLink from '@/ui/elements/app-link';
 import CommentIcon from '@/ui/elements/icons/comment-icon';
 import ShareIcon from '@/ui/elements/icons/share-icon';
-import formatDate from '@/shared/utils/format-date';
+import formatDate from '../../../shared/utils/functions/format-date';
 
 const Post: TComponent<false, z.infer<typeof postSchema>> = ({
   content,
