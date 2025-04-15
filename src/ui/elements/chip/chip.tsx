@@ -4,29 +4,6 @@ import { CSSProperties, MouseEvent } from 'react';
 import clsx from 'clsx';
 import hexToRgb from '@/shared/utils/functions/hex-to-rgb';
 
-// const sizes = {
-//   small: {
-//     fontSize: '12px',
-//     padding: '6px 14px',
-//   },
-//   medium: {
-//     fontSize: '14px',
-//     padding: '8px 16px',
-//   },
-// };
-
-// const variants = {
-//   filled: {},
-//   outlined: {
-//     border: `${color} 1px solid`,
-//   },
-// };
-// return {
-//   backgroundColor: alpha(color, 0.1),
-//   color: color,
-//   ...variants[variant],
-// };
-
 const Chip: TComponent<
   true,
   {
@@ -40,7 +17,7 @@ const Chip: TComponent<
   children,
   size = 'md',
   color = 'primary',
-  variant = 'outlined',
+  variant = 'filled',
   onClick,
 }) => {
   const isThemeColor = color === 'primary' || color === 'secondary';
