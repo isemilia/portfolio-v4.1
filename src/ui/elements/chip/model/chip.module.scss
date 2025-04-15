@@ -14,6 +14,10 @@
     --chip-color: 172, 117, 255;
   }
 
+  &[data-color=neutral] {
+    --chip-color: 157, 157, 164;
+  }
+
   &[data-color=secondary] {
     --chip-color: 76, 252, 225;
   }

@@ -1,9 +1,15 @@
-import Chip from '@/ui/elements/chip';
+import Filters from '@/ui/components/filters';
 
 const Page = () => {
+  const filters = [
+    { name: 'static', label: 'Static' },
+    { name: 'js', label: 'Plain JS' },
+    { name: 'spa', label: 'SPA' },
+  ];
+
   return (
     <div>
-      <Chip>Chip</Chip>
+      <Filters options={filters} defaultValue={'static'} />
     </div>
   );
 };

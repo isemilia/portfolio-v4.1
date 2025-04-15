@@ -7,7 +7,7 @@ import hexToRgb from '@/shared/utils/functions/hex-to-rgb';
 const Chip: TComponent<
   true,
   {
-    color?: 'primary' | 'secondary' | string;
+    color?: 'primary' | 'secondary' | 'neutral' | string;
     size?: 'sm' | 'md';
     variant?: 'filled' | 'outlined';
     onClick?: (event: MouseEvent<HTMLElement>) => void;
@@ -20,7 +20,8 @@ const Chip: TComponent<
   variant = 'filled',
   onClick,
 }) => {
-  const isThemeColor = color === 'primary' || color === 'secondary';
+  const isThemeColor =
+    color === 'primary' || color === 'secondary' || color === 'neutral';
   return (
     <div
       className={clsx(classes.chip, className)}
