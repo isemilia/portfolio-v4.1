@@ -4,7 +4,7 @@ import { TComponent } from '@/shared/types/components';
 import NavButton from '@/ui/elements/nav-button';
 import classes from './model/navigation.module.scss';
 import clsx from 'clsx';
-import { useRef, useState, MouseEvent, useEffect } from 'react';
+import { MouseEvent, useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
 const Navigation: TComponent = ({ className }) => {
@@ -17,7 +17,7 @@ const Navigation: TComponent = ({ className }) => {
   const links = [
     { href: '/', label: 'About', name: 'about' },
     { href: '/skills', label: 'Skills', name: 'skills' },
-    // { href: '/projects', label: 'Projects' },
+    { href: '/projects', label: 'Projects', name: 'projects' },
     // { href: '/contact', label: 'Contact' },
     { href: '/blog', label: 'Blog', name: 'blog' },
   ];
