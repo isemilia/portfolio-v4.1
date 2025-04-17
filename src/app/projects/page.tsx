@@ -1,4 +1,6 @@
 import Filters from '@/ui/components/filters';
+import Project from '@/ui/components/project';
+import Container from '@/ui/elements/container';
 
 const Page = () => {
   const filters = [
@@ -8,9 +10,12 @@ const Page = () => {
   ];
 
   return (
-    <div>
+    <Container>
       <Filters options={filters} defaultValue={'static'} />
-    </div>
+      <div className={'mt-[30px]'}>
+        <Project />
+      </div>
+    </Container>
   );
 };
 
