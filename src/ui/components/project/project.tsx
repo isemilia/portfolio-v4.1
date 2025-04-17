@@ -3,6 +3,9 @@ import ExternalLinkIcon from '@/ui/elements/icons/external-link-icon';
 import Title from '@/ui/elements/title';
 import Text from '@/ui/elements/text';
 import Chip from '@/ui/elements/chip';
+import AppLink from '@/ui/elements/app-link';
+import CodeIcon from '@/ui/elements/icons/code-icon';
+import DocsIcon from '@/ui/elements/icons/docs-icon';
 
 const Project = () => {
   return (
@@ -34,6 +37,17 @@ const Project = () => {
           <Chip size={'sm'} color={'secondary'}>
             SCSS
           </Chip>
+        </div>
+        <div className={classes.links}>
+          <AppLink textSize={'sm'} iconSize={'xs'} icon={<CodeIcon />}>
+            Source
+          </AppLink>
+          <AppLink textSize={'sm'} iconSize={'xs'} icon={<DocsIcon />}>
+            Docs
+          </AppLink>
+          <AppLink textSize={'sm'} iconSize={'xs'} icon={<ExternalLinkIcon />}>
+            Other
+          </AppLink>
         </div>
       </div>
     </div>

@@ -1,4 +1,7 @@
 .link {
+  --text-size: var(--body-size); // md
+  --icon-size: 20px;
+
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
@@ -10,6 +13,7 @@
 
   .text {
     padding-top: 1px;
+    font-size: var(--text-size);
   }
 
   &[data-icon-position='right'] {
@@ -17,29 +21,29 @@
   }
 
   .icon {
-    --icon-size: 20px;
-
     display: grid;
     place-items: center;
     height: var(--icon-size);
   }
 
-  &[data-size='md'] {
-    .icon {
-      --icon-size: 20px;
-    }
+  &[data-text-size='sm'] {
+    --text-size: var(--small-size);
   }
 
-  &[data-size='sm'] {
-    .icon {
-      --icon-size: 16px;
-    }
+  &[data-text-size='xs'] {
+    --text-size: var(--extra-small-size);
   }
 
-  &[data-size='xs'] {
-    .icon {
-      --icon-size: 12px;
-    }
+  &[data-icon-size='md'] {
+    --icon-size: 20px;
+  }
+
+  &[data-icon-size='sm'] {
+    --icon-size: 16px;
+  }
+
+  &[data-icon-size='xs'] {
+    --icon-size: 12px;
   }
 
   svg {
