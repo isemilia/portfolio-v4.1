@@ -1,0 +1,363 @@
+[
+  {
+    "id": 1,
+    "img": "/projects/taskhub.png",
+    "title": "\"TaskHub\" - Task Management",
+    "description": "Minimalist task manager, my first full-stack project. Powered by React and MUI on the front end, and NodeJS on the back end.",
+    "href": "https://tasks-isemilia.vercel.app/",
+    "tags": [
+      {
+        "label": "Desktop only",
+        "type": "primary"
+      },
+      {
+        "label": "React",
+        "type": "secondary"
+      },
+      {
+        "label": "Redux",
+        "type": "secondary"
+      },
+      {
+        "label": "RTK Query",
+        "type": "secondary"
+      },
+      {
+        "label": "TypeScript",
+        "type": "secondary"
+      },
+      {
+        "label": "MUI",
+        "type": "secondary"
+      },
+      {
+        "label": "SCSS",
+        "type": "secondary"
+      },
+      {
+        "label": "NodeJS",
+        "type": "secondary"
+      },
+      {
+        "label": "Express",
+        "type": "secondary"
+      },
+      {
+        "label": "MongoDB",
+        "type": "secondary"
+      }
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "href": "https://github.com/isemilia/task-management"
+      },
+      {
+        "label": "Docs",
+        "type": "docs",
+        "href": "https://isemilia.notion.site/Task-Management-Dev-Docs-b4e7911988a743bbb4e2bb562c97e2c3?pvs=4"
+      },
+      {
+        "label": "Back end",
+        "type": "default",
+        "href": "https://github.com/isemilia/task-management-backend"
+      }
+    ],
+    "categories": [
+      "spa",
+      "back-end"
+    ]
+  },
+  {
+    "id": 2,
+    "img": "/projects/fast-pace.png",
+    "title": "\"Fast Pace\" - Sneaker Store",
+    "description": "ReactJS store with order placement, catalog browsing, and type/price filtering.",
+    "href": "https://fast-pace.vercel.app/",
+    "tags": [
+      {
+        "label": "Responsive",
+        "type": "primary"
+      },
+      {
+        "label": "React",
+        "type": "secondary"
+      },
+      {
+        "label": "JavaScript",
+        "type": "secondary"
+      },
+      {
+        "label": "Redux",
+        "type": "secondary"
+      },
+      {
+        "label": "CSS",
+        "type": "secondary"
+      },
+      {
+        "label": "SCSS",
+        "type": "secondary"
+      }
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "href": "https://github.com/isemilia/fast-pace-app"
+      }
+    ],
+    "categories": [
+      "spa"
+    ]
+  },
+  {
+    "id": 3,
+    "img": "/projects/weather.png",
+    "title": "Weather App",
+    "description": "Web-based weather app that displays information about any city.",
+    "href": "https://weather-app-by-emilia.vercel.app/",
+    "tags": [
+      {
+        "label": "Responsive",
+        "type": "primary"
+      },
+      {
+        "label": "React",
+        "type": "secondary"
+      },
+      {
+        "label": "JavaScript",
+        "type": "secondary"
+      },
+      {
+        "label": "CSS",
+        "type": "secondary"
+      },
+      {
+        "label": "SCSS",
+        "type": "secondary"
+      },
+      {
+        "label": "OpenWeather API",
+        "type": "secondary"
+      }
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "href": "https://github.com/isemilia/weather-react"
+      }
+    ],
+    "categories": [
+      "spa"
+    ]
+  },
+  {
+    "id": 4,
+    "img": "/projects/stopwatch.png",
+    "title": "Stopwatch & Notes",
+    "description": "Web-based stopwatch with note-taking feature and local storage for data persistence. One of my oldest projects.",
+    "href": "https://isemilia.github.io/stopwatch/dist/",
+    "categories": [
+      "plain"
+    ],
+    "tags": [
+      {
+        "label": "Responsive",
+        "type": "primary"
+      },
+      {
+        "label": "HTML",
+        "type": "secondary"
+      },
+      {
+        "label": "CSS",
+        "type": "secondary"
+      },
+      {
+        "label": "SCSS",
+        "type": "secondary"
+      },
+      {
+        "label": "JavaScript",
+        "type": "secondary"
+      }
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "href": "https://github.com/isemilia/stopwatch"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "img": "/projects/date-countdown.png",
+    "title": "Date Countdown",
+    "description": "Web-based date countdown tool with persistent data on refresh. One of my earliest JS apps.",
+    "href": "https://isemilia.github.io/date-calculator/app",
+    "categories": [
+      "plain"
+    ],
+    "tags": [
+      {
+        "label": "Responsive",
+        "type": "primary"
+      },
+      {
+        "label": "HTML",
+        "type": "secondary"
+      },
+      {
+        "label": "CSS",
+        "type": "secondary"
+      },
+      {
+        "label": "SCSS",
+        "type": "secondary"
+      },
+      {
+        "label": "JavaScript",
+        "type": "secondary"
+      }
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "href": "https://github.com/isemilia/date-calculator"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "img": "/projects/portfolio-v3.png",
+    "title": "Portfolio v3 (2023)",
+    "description": "Third version of my personal portfolio website.",
+    "href": "https://emilia.alwaysdata.net/",
+    "categories": [
+      "static"
+    ],
+    "tags": [
+      {
+        "label": "Responsive",
+        "type": "primary"
+      },
+      {
+        "label": "HTML",
+        "type": "secondary"
+      },
+      {
+        "label": "CSS",
+        "type": "secondary"
+      },
+      {
+        "label": "SCSS",
+        "type": "secondary"
+      },
+      {
+        "label": "JavaScript",
+        "type": "secondary"
+      },
+      {
+        "label": "PHP",
+        "type": "secondary"
+      },
+      {
+        "label": "EmailJS",
+        "type": "secondary"
+      }
+    ],
+    "links": []
+  },
+  {
+    "id": 7,
+    "img": "/projects/portfolio-v2.png",
+    "title": "Portfolio v2 (2022)",
+    "description": "Second iteration of my portfolio.",
+    "href": "https://isemilia.github.io/portfolio-v2/",
+    "categories": [
+      "static"
+    ],
+    "tags": [
+      {
+        "label": "Responsive",
+        "type": "primary"
+      },
+      {
+        "label": "HTML",
+        "type": "secondary"
+      },
+      {
+        "label": "CSS",
+        "type": "secondary"
+      },
+      {
+        "label": "SCSS",
+        "type": "secondary"
+      },
+      {
+        "label": "JavaScript",
+        "type": "secondary"
+      }
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "href": "https://github.com/isemilia/portfolio-v2"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "img": "/projects/openbiz.png",
+    "title": "Openbiz",
+    "description": "Landing page for a service for non-residents of Kazakhstan.",
+    "href": "https://isemilia.github.io/openbiz/dist",
+    "categories": [
+      "static"
+    ],
+    "tags": [
+      {
+        "label": "Responsive",
+        "type": "primary"
+      },
+      {
+        "label": "HTML",
+        "type": "secondary"
+      },
+      {
+        "label": "CSS",
+        "type": "secondary"
+      },
+      {
+        "label": "SCSS",
+        "type": "secondary"
+      },
+      {
+        "label": "JavaScript",
+        "type": "secondary"
+      },
+      {
+        "label": "PHP",
+        "type": "secondary"
+      },
+      {
+        "label": "WordPress",
+        "type": "secondary"
+      }
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "href": "https://github.com/isemilia/openbiz"
+      }
+    ]
+  }
+]
