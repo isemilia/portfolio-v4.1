@@ -1,18 +1,11 @@
 import { TComponent } from '@/shared/types/components';
 import classes from './model/chip.module.scss';
-import { CSSProperties, MouseEvent } from 'react';
+import { CSSProperties } from 'react';
 import clsx from 'clsx';
 import hexToRgb from '@/shared/utils/functions/hex-to-rgb';
+import { TChipProps } from '@/ui/elements/chip/model/types';
 
-const Chip: TComponent<
-  true,
-  {
-    color?: 'primary' | 'secondary' | 'neutral' | string;
-    size?: 'sm' | 'md';
-    variant?: 'filled' | 'outlined';
-    onClick?: (event: MouseEvent<HTMLElement>) => void;
-  }
-> = ({
+const Chip: TComponent<true, TChipProps> = ({
   className,
   children,
   size = 'md',

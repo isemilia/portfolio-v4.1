@@ -13,7 +13,12 @@ const Page = () => {
     <Container>
       <Filters options={filters} defaultValue={'static'} />
       <div className={'mt-[30px]'}>
-        <Project />
+        <Project
+          img={'https://isemilia.vercel.app/projects/taskhub.png'}
+          title={'Title'}
+          href={'/'}
+          description={'Description'}
+        />
       </div>
     </Container>
   );
