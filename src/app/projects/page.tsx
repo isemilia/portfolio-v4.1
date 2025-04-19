@@ -1,10 +1,12 @@
 import Filters from '@/ui/components/filters';
 import Container from '@/ui/elements/container';
 import Project from '@/ui/components/project';
+import { projectsListSchema } from '@/shared/api/types/projects';
 
 const Page = async () => {
-  const response = await fetch('http://localhost:3000/api/projects');
-  const projects = await response.json();
+  const response = await fetch(`${process.env.API_URL}/api/projects`);
+  const data = (await response.json()).data;
+  const projects = projectsListSchema.parse(data);
 
   const filters = [
     { name: 'static', label: 'Static' },
@@ -12,15 +14,11 @@ const Page = async () => {
     { name: 'spa', label: 'SPA' },
   ];
 
-  console.log(projects);
-
-  // todo: type response, make filters work
-
   return (
     <Container>
       <Filters options={filters} defaultValue={'static'} />
       <div className={'mt-[30px]'}>
-        {projects.data.map((project) => {
+        {projects.map((project) => {
           return (
             <Project
               key={project.id}
