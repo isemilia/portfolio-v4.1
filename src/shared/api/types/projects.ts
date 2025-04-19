@@ -19,6 +19,7 @@ export const projectSchema = z.object({
   href: z.string().url(),
   tags: z.array(tagSchema),
   links: z.array(linkSchema),
+  categories: z.array(z.string()),
 });
 
 export const projectsListSchema = z.array(projectSchema);

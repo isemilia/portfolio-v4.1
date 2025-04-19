@@ -6,5 +6,6 @@ export interface TFilterOption {
 export interface TFilterProps {
   options: TFilterOption[];
   defaultValue?: string;
+  value?: string;
   onChange?: (option: TFilterOption) => void;
 }

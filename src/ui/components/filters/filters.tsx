@@ -4,7 +4,7 @@ import { TComponent } from '@/shared/types/components';
 import FilterIcon from '@/ui/elements/icons/filter-icon';
 import Chip from '@/ui/elements/chip';
 import clsx from 'clsx';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { TFilterProps } from '@/ui/components/filters/model/types';
 
 const Filters: TComponent<false, TFilterProps> = ({
@@ -12,8 +12,15 @@ const Filters: TComponent<false, TFilterProps> = ({
   className,
   defaultValue,
   onChange,
+  value,
 }) => {
   const [current, setCurrent] = useState(defaultValue);
+
+  useEffect(() => {
+    if (value) {
+      setCurrent(value);
+    }
+  }, [value]);
 
   return (
     <div className={clsx('flex items-center gap-[14px]', className)}>
@@ -25,7 +32,10 @@ const Filters: TComponent<false, TFilterProps> = ({
             className={'cursor-pointer'}
             variant={'outlined'}
             onClick={() => {
-              setCurrent(filter.name);
+              if (!value) {
+                setCurrent(filter.name);
+              }
+
               onChange?.(filter);
             }}
             color={current !== filter.name ? 'neutral' : 'primary'}

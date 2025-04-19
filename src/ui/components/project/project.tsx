@@ -48,6 +48,8 @@ const Project: TComponent<false, TProjectProps> = ({
               iconSize={'xs'}
               icon={getLinkIcon(link.type)}
               iconPosition={'right'}
+              href={link.href}
+              target={'_blank'}
             >
               {link.label}
             </AppLink>

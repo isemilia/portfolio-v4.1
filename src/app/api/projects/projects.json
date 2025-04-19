@@ -359,5 +359,53 @@
         "href": "https://github.com/isemilia/openbiz"
       }
     ]
+  },
+  {
+    "id": 9,
+    "img": "/projects/portfolio.png",
+    "title": "This website :)",
+    "description": "The latest version of my personal portfolio website.",
+    "href": "https://isemilia.vercel.app",
+    "categories": [
+      "spa"
+    ],
+    "tags": [
+      {
+        "label": "Responsive",
+        "type": "primary"
+      },
+      {
+        "label": "TypeScript",
+        "type": "secondary"
+      },
+      {
+        "label": "Next.js",
+        "type": "secondary"
+      },
+      {
+        "label": "React",
+        "type": "secondary"
+      },
+      {
+        "label": "SCSS",
+        "type": "secondary"
+      },
+      {
+        "label": "Tailwind",
+        "type": "secondary"
+      }
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "href": "https://github.com/isemilia/portfolio-v4.1"
+      },
+      {
+        "label": "Version 4",
+        "type": "source",
+        "href": "https://github.com/isemilia/portfolio-v4"
+      }
+    ]
   }
 ]
