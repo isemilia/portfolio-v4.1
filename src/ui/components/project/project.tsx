@@ -8,6 +8,7 @@ import { TComponent } from '@/shared/types/components';
 import { TProjectProps } from '@/ui/components/project/model/types';
 import getLinkIcon from '@/shared/utils/functions/get-link-type';
 import clsx from 'clsx';
+import Image from 'next/image';
 
 const Project: TComponent<false, TProjectProps> = ({
   img,
@@ -21,7 +22,13 @@ const Project: TComponent<false, TProjectProps> = ({
   return (
     <div className={clsx(classes.project, className)}>
       <div className={classes.thumbnail}>
-        <img src={img} alt={'Project'} />
+        <Image
+          src={img}
+          alt={'Project'}
+          fill
+          style={{ objectFit: 'cover' }}
+          sizes="(max-width: 768px) 100vw, 180px"
+        />
       </div>
       <div>
         <Title variant={'h3'} component={'h3'} className={classes.title}>

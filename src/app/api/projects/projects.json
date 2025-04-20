@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": "/projects/taskhub.png",
+    "img": "/img/projects/taskhub.png",
     "title": "\"TaskHub\" - Task Management",
     "description": "Minimalist task manager, my first full-stack project. Powered by React and MUI on the front end, and NodeJS on the back end.",
     "href": "https://tasks-isemilia.vercel.app/",
@@ -71,7 +71,7 @@
   },
   {
     "id": 2,
-    "img": "/projects/fast-pace.png",
+    "img": "/img/projects/fast-pace.png",
     "title": "\"Fast Pace\" - Sneaker Store",
     "description": "ReactJS store with order placement, catalog browsing, and type/price filtering.",
     "href": "https://fast-pace.vercel.app/",
@@ -114,7 +114,7 @@
   },
   {
     "id": 3,
-    "img": "/projects/weather.png",
+    "img": "/img/projects/weather.png",
     "title": "Weather App",
     "description": "Web-based weather app that displays information about any city.",
     "href": "https://weather-app-by-emilia.vercel.app/",
@@ -157,7 +157,7 @@
   },
   {
     "id": 4,
-    "img": "/projects/stopwatch.png",
+    "img": "/img/projects/stopwatch.png",
     "title": "Stopwatch & Notes",
     "description": "Web-based stopwatch with note-taking feature and local storage for data persistence. One of my oldest projects.",
     "href": "https://isemilia.github.io/stopwatch/dist/",
@@ -196,7 +196,7 @@
   },
   {
     "id": 5,
-    "img": "/projects/date-countdown.png",
+    "img": "/img/projects/date-countdown.png",
     "title": "Date Countdown",
     "description": "Web-based date countdown tool with persistent data on refresh. One of my earliest JS apps.",
     "href": "https://isemilia.github.io/date-calculator/app",
@@ -235,7 +235,7 @@
   },
   {
     "id": 6,
-    "img": "/projects/portfolio-v3.png",
+    "img": "/img/projects/portfolio-v3.png",
     "title": "Portfolio v3 (2023)",
     "description": "Third version of my personal portfolio website.",
     "href": "https://emilia.alwaysdata.net/",
@@ -276,7 +276,7 @@
   },
   {
     "id": 7,
-    "img": "/projects/portfolio-v2.png",
+    "img": "/img/projects/portfolio-v2.png",
     "title": "Portfolio v2 (2022)",
     "description": "Second iteration of my portfolio.",
     "href": "https://isemilia.github.io/portfolio-v2/",
@@ -315,7 +315,7 @@
   },
   {
     "id": 8,
-    "img": "/projects/openbiz.png",
+    "img": "/img/projects/openbiz.png",
     "title": "Openbiz",
     "description": "Landing page for a service for non-residents of Kazakhstan.",
     "href": "https://isemilia.github.io/openbiz/dist",
@@ -362,7 +362,7 @@
   },
   {
     "id": 9,
-    "img": "/projects/portfolio.png",
+    "img": "/img/projects/portfolio-v4.1.png",
     "title": "This website :)",
     "description": "The latest version of my personal portfolio website.",
     "href": "https://isemilia.vercel.app",

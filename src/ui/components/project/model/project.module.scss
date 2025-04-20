@@ -8,17 +8,12 @@
 }
 
 .thumbnail {
+  position: relative;
   background-color: var(--background-elevated);
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
   aspect-ratio: 1 / 0.6667;
-
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
 
   @media (max-width: 575px) {
     margin-top: 4px;
