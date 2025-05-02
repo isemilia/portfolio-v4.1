@@ -8,11 +8,10 @@ import Project from '@/ui/components/project';
 import { useState } from 'react';
 
 const filters = [
-  // { name: 'featured', label: 'Featured' },
   { name: 'spa', label: 'SPA' },
   { name: 'plain', label: 'Plain JS' },
   { name: 'static', label: 'Static' },
-  { name: 'articles', label: 'Articles' },
+  { name: 'other', label: 'Other' },
 ];
 
 const ProjectList: TComponent<

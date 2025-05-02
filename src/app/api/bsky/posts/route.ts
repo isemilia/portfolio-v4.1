@@ -9,7 +9,7 @@ export const GET = async () => {
     const posts = await agent.getAuthorFeed({
       actor: 'did:plc:dtgi4qowdmi5fjnnrews5xiv',
       filter: 'posts_no_replies',
-      limit: 6,
+      limit: 4,
     });
 
     return NextResponse.json({

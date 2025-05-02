@@ -159,7 +159,7 @@
     "id": 4,
     "img": "/img/projects/stopwatch.png",
     "title": "Stopwatch & Notes",
-    "description": "Web-based stopwatch with note-taking feature and local storage for data persistence. One of my oldest projects.",
+    "description": "Stopwatch with note-taking feature and local storage for data persistence. One of my oldest projects.",
     "href": "https://isemilia.github.io/stopwatch/dist/",
     "categories": [
       "plain"
@@ -198,7 +198,7 @@
     "id": 5,
     "img": "/img/projects/date-countdown.png",
     "title": "Date Countdown",
-    "description": "Web-based date countdown tool with persistent data on refresh. One of my earliest JS apps.",
+    "description": "Date countdown tool with persistent data on refresh. One of my earliest JS apps.",
     "href": "https://isemilia.github.io/date-calculator/app",
     "categories": [
       "plain"
@@ -407,5 +407,34 @@
         "href": "https://github.com/isemilia/portfolio-v4"
       }
     ]
+  },
+  {
+    "id": 10,
+    "img": "/img/projects/cfa-article.png",
+    "title": "Component-Focused Architecture: A Better Way to Organize Your Front-End Projects",
+    "description": "An article about my approach to front-end architecture",
+    "href": "https://dev.to/isemilia/a-better-way-to-organize-your-front-end-projects-component-focused-architecture-cfa-42hb",
+    "categories": [
+      "other"
+    ],
+    "tags": [
+      {
+        "label": "Article",
+        "type": "primary"
+      },
+      {
+        "label": "React",
+        "type": "secondary"
+      },
+      {
+        "label": "Next",
+        "type": "secondary"
+      },
+      {
+        "label": "Architecture",
+        "type": "secondary"
+      }
+    ],
+    "links": []
   }
 ]

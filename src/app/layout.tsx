@@ -7,7 +7,7 @@ import 'normalize.css/normalize.css';
 import classes from '@/shared/global/model/app.module.scss';
 import '@/shared/theme/variables.scss';
 import '@/shared/global/model/global.scss';
-import Profile from '@/ui/widgets/profile';
+import Profile from '@/features/widgets/profile';
 import Container from '@/ui/elements/container';
 
 const poppins = Poppins({
