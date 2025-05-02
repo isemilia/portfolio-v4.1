@@ -410,6 +410,35 @@
   },
   {
     "id": 10,
+    "img": "/img/projects/cfa-github.png",
+    "title": "Component-Focused Architecture (CFA)",
+    "description": "A GitHub organization where I break down how to structure front-end projects to improve developer experience",
+    "href": "https://github.com/Component-Focused-Architecture-CFA",
+    "categories": [
+      "other"
+    ],
+    "tags": [
+      {
+        "label": "Documentation",
+        "type": "primary"
+      },
+      {
+        "label": "React",
+        "type": "secondary"
+      },
+      {
+        "label": "Next",
+        "type": "secondary"
+      },
+      {
+        "label": "Architecture",
+        "type": "secondary"
+      }
+    ],
+    "links": []
+  },
+  {
+    "id": 11,
     "img": "/img/projects/cfa-article.png",
     "title": "Component-Focused Architecture: A Better Way to Organize Your Front-End Projects",
     "description": "An article about my approach to front-end architecture",
