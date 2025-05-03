@@ -7,20 +7,15 @@ import clsx from 'clsx';
 import { MouseEvent, useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
-const Navigation: TComponent = ({ className }) => {
+const Navigation: TComponent<
+  false,
+  { links: { href: string; label: string; name: string }[] }
+> = ({ className, links }) => {
   const [position, setPosition] = useState({ width: 0, left: 0 });
 
   const ref = useRef<null | HTMLDivElement>(null);
 
   const pathname = usePathname();
-
-  const links = [
-    { href: '/', label: 'About', name: 'about' },
-    { href: '/skills', label: 'Skills', name: 'skills' },
-    { href: '/projects', label: 'Projects', name: 'projects' },
-    // { href: '/contact', label: 'Contact' },
-    { href: '/blog', label: 'Blog', name: 'blog' },
-  ];
 
   const setIndicator = (offsetLeft: number, scrollWidth: number) => {
     const width = scrollWidth / 2;
@@ -42,7 +37,8 @@ const Navigation: TComponent = ({ className }) => {
   useEffect(() => {
     const parent = ref.current;
     if (parent) {
-      const linkName = pathname === '/' ? 'about' : pathname.replace(/\//, '');
+      const linkName =
+        pathname === '/' ? 'default' : pathname.replace(/\//, '');
       const link: HTMLAnchorElement | null = parent.querySelector(
         `.nav-${linkName}`,
       );

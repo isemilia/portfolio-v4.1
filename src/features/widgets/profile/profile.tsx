@@ -12,6 +12,13 @@ import BlueskyIcon from '@/ui/elements/icons/bluesky-icon';
 import Navigation from '@/ui/components/navigation';
 
 const Profile: FC = () => {
+  const links = [
+    { href: '/', label: 'About', name: 'default' },
+    { href: '/skills', label: 'Skills', name: 'skills' },
+    { href: '/projects', label: 'Projects', name: 'projects' },
+    { href: '/blog', label: 'Blog', name: 'blog' },
+  ];
+
   return (
     <div className={classes.profile}>
       <Banner />
@@ -51,7 +58,7 @@ const Profile: FC = () => {
             Bluesky
           </AppLink>
         </div>
-        <Navigation className={classes.navigation} />
+        <Navigation links={links} className={classes.navigation} />
       </Container>
     </div>
   );

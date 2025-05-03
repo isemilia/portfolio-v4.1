@@ -28,7 +28,13 @@ export default function Home() {
         </p>
         <p>Always open to exciting projects and new challenges!</p>
       </Text>
-      <Cta className={'mt-[30px]'} />
+      <Cta
+        title={'Got an idea?'}
+        button={{
+          label: "Let's chat!",
+        }}
+        className={'mt-[30px]'}
+      />
     </div>
   );
 }
