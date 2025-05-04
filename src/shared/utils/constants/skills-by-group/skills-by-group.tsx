@@ -34,8 +34,8 @@ const skillsByGroup = [
     name: 'front-end',
     title: 'Front end',
     chips: [
-      { icon: <HtmlIcon />, label: 'HTML5', color: '#F16529' },
-      { icon: <CssIcon />, label: 'CSS3', color: '#33A9DC' },
+      { icon: <HtmlIcon />, label: 'HTML', color: '#F16529' },
+      { icon: <CssIcon />, label: 'CSS', color: '#33A9DC' },
       { icon: <SassIcon />, label: 'SCSS', color: '#CD6C9B' },
       { icon: <ReactIcon />, label: 'React', color: '#53C1DE' },
       { icon: <NextIcon />, label: 'Next', color: undefined },
