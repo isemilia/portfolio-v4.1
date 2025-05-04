@@ -3,7 +3,9 @@ import readJsonFile from '@/shared/utils/functions/read-json-file';
 
 export const GET = async () => {
   try {
-    const data = await readJsonFile('src/app/api/projects/projects.json');
+    const data = await readJsonFile(
+      'src/app/api/work-experience/timeline.json',
+    );
 
     return NextResponse.json({ data });
   } catch {

@@ -1,0 +1,13 @@
+.root {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  grid-template-rows: auto;
+  column-gap: 18px;
+}
+
+.chips {
+  margin-top: 14px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "title": "Middle+ front-end developer",
+    "description": "Web application development using Next.js, TypeScript, Shadcn, and other technologies.",
+    "date": "Apr 2025 - present",
+    "tags": [
+      {
+        "label": "React",
+        "color": "secondary"
+      },
+      {
+        "label": "Next",
+        "color": "secondary"
+      },
+      {
+        "label": "TypeScript",
+        "color": "secondary"
+      },
+      {
+        "label": "JavaScript",
+        "color": "secondary"
+      },
+      {
+        "label": "SCSS",
+        "color": "secondary"
+      },
+      {
+        "label": "React Query",
+        "color": "secondary"
+      },
+      {
+        "label": "Shadcn",
+        "color": "secondary"
+      },
+      {
+        "label": "Tailwind",
+        "color": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Middle front-end developer",
+    "description": "Built the front end for a social assistance management app using React, TypeScript, and MUI.\nIntegrated RTK, RTK Query, and SSE for real-time updates.\nWrote component tests with Vitest & React Testing Library.\nContributed to an HRM app using Next.js, TypeScript, and Mantine UI.",
+    "date": "Oct 2024 - Apr 2025",
+    "tags": [
+      {
+        "label": "React",
+        "color": "secondary"
+      },
+      {
+        "label": "Next",
+        "color": "secondary"
+      },
+      {
+        "label": "Redux",
+        "color": "secondary"
+      },
+      {
+        "label": "TypeScript",
+        "color": "secondary"
+      },
+      {
+        "label": "JavaScript",
+        "color": "secondary"
+      },
+      {
+        "label": "SCSS",
+        "color": "secondary"
+      },
+      {
+        "label": "MUI",
+        "color": "secondary"
+      },
+      {
+        "label": "Mantine UI",
+        "color": "secondary"
+      },
+      {
+        "label": "RTK Query",
+        "color": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Front-end developer",
+    "description": "Participated in the development of a CRM system using React and TypeScript, implementing FSD architecture principles.\nCreated a UI library based on MUI.\nRefactored project structure and optimized code in accordance with SOLID, DRY, and KISS principles.\nAssisted in developing the back end for a chat widget using WebSockets and MongoDB.",
+    "date": "May 2023 - Oct 2024",
+    "tags": [
+      {
+        "label": "React",
+        "color": "secondary"
+      },
+      {
+        "label": "Redux",
+        "color": "secondary"
+      },
+      {
+        "label": "TypeScript",
+        "color": "secondary"
+      },
+      {
+        "label": "JavaScript",
+        "color": "secondary"
+      },
+      {
+        "label": "SCSS",
+        "color": "secondary"
+      },
+      {
+        "label": "Storybook",
+        "color": "secondary"
+      },
+      {
+        "label": "MUI",
+        "color": "secondary"
+      },
+      {
+        "label": "RTK Query",
+        "color": "secondary"
+      },
+      {
+        "label": "MongoDB",
+        "color": "secondary"
+      },
+      {
+        "label": "GraphQL",
+        "color": "secondary"
+      },
+      {
+        "label": "NodeJS",
+        "color": "secondary"
+      },
+      {
+        "label": "Express",
+        "color": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Front-end developer",
+    "description": "Developed responsive websites from Figma designs using HTML, CSS, and JavaScript.\nIntegrated layouts with WordPress, including theme development and plugin setup.\nOptimized website performance with SEO.\nMaintained and updated websites by fixing bugs and implementing changes.",
+    "date": "Mar 2022 - May 2023",
+    "tags": [
+      {
+        "label": "HTML",
+        "color": "secondary"
+      },
+      {
+        "label": "JavaScript",
+        "color": "secondary"
+      },
+      {
+        "label": "CSS",
+        "color": "secondary"
+      },
+      {
+        "label": "SCSS",
+        "color": "secondary"
+      },
+      {
+        "label": "PHP",
+        "color": "secondary"
+      },
+      {
+        "label": "WordPress",
+        "color": "secondary"
+      }
+    ]
+  }
+]
