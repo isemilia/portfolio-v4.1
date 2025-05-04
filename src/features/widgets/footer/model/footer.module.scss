@@ -1,0 +1,26 @@
+.root {
+  margin-top: 50px;
+  padding: 10px 48px;
+  background: var(--background-elevated);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 575px) {
+    padding: 10px 24px 20px;
+    flex-direction: column-reverse;
+    row-gap: 16px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @media (max-width: 575px) {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 16px;
+  }
+}

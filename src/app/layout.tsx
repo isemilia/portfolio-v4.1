@@ -9,6 +9,7 @@ import '@/shared/theme/variables.scss';
 import '@/shared/global/model/global.scss';
 import Profile from '@/features/widgets/profile';
 import Container from '@/ui/elements/container';
+import Footer from '@/features/widgets/footer';
 
 const poppins = Poppins({
   weight: ['400', '500', '700'],
@@ -33,6 +34,7 @@ export default function RootLayout({
         <div className={classes.container} id={'root'}>
           <Profile />
           <Container className={classes.children}>{children}</Container>
+          <Footer />
         </div>
       </body>
     </html>
