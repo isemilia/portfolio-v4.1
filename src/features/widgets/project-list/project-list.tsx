@@ -8,17 +8,17 @@ import Project from '@/ui/components/project';
 import { useState } from 'react';
 
 const filters = [
+  { name: 'featured', label: 'Featured' },
   { name: 'spa', label: 'SPA' },
   { name: 'plain', label: 'Plain JS' },
   { name: 'static', label: 'Static' },
-  { name: 'other', label: 'Other' },
 ];
 
 const ProjectList: TComponent<
   false,
   { projects: z.infer<typeof projectsListSchema> }
 > = ({ projects }) => {
-  const [filter, setFilter] = useState('spa');
+  const [filter, setFilter] = useState('featured');
 
   return (
     <div className={'space-y-[30px]'}>
