@@ -1,7 +1,11 @@
 .profile {
   --avatar-size: 90px;
 
+
   .info {
+    position: relative;
+    z-index: 1;
+
     margin-top: calc(var(--avatar-size) / -2);
     display: flex;
     align-items: center;

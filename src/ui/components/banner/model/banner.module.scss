@@ -3,4 +3,93 @@
   // fallback for browsers that do no support relative color syntax yet
   background: linear-gradient(to bottom, var(--primary-darker), var(--background-main));
   background: linear-gradient(to bottom, var(--primary-darker), rgba(from var(--background-main) r g b / 50%));
+
+  position: relative;
+  width: 100%;
+
+  z-index: 0;
+
+  @media (max-width: 575px) {
+    height: 140px;
+  }
+
+  .particle, .glow {
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .glow {
+    width: 1px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 20px 10px rgba(222, 91, 255, 0.1);
+  }
+}
+
+.dot {
+  position: absolute;
+  pointer-events: none;
+
+  span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #fff;
+    opacity: 0.6;
+  }
+}
+
+@keyframes fall-1 {
+  0% {
+    transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0px, 200px) rotateX(200deg) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-2 {
+  0% {
+    transform: translate(0px, 0px) rotateY(0deg) rotateZ(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0px, 225px) rotateY(100deg) rotateZ(200deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-3 {
+  0% {
+    transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0px, 250px) rotateX(180deg) rotateY(-180deg) rotateZ(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes shine-1 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes shine-2 {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: .4
+  }
 }
