@@ -46,7 +46,7 @@ const Navigation: TComponent<
         setIndicator(link.offsetLeft, link.scrollWidth);
       }
     }
-  }, []);
+  }, [pathname]);
 
   return (
     <div ref={ref} className={clsx(classes.navigation, className)}>
