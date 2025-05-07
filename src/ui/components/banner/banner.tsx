@@ -24,6 +24,7 @@ const Banner: FC = () => {
       (animation) => classes[animation],
     ),
     particleClass: classes.particle,
+    colors: ['#AC75FF', '#FF67D5', '#FF9F74', '#F9F871'],
   });
 
   const shineAnimations = ['shine-1', 'shine-2'];
