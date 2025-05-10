@@ -2,6 +2,11 @@ import Container from '@/ui/elements/container';
 import Title from '@/ui/elements/title';
 import IconChip from '@/ui/elements/icon-chip';
 import skillsByGroup from '@/shared/utils/constants/skills-by-group';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Skills',
+};
 
 const Page = () => {
   return (

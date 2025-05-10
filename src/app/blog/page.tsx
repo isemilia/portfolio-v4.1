@@ -1,5 +1,10 @@
 import { postListSchema } from '@/shared/api/types/posts';
 import Post from '@/ui/components/post';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog',
+};
 
 const Page = async () => {
   const url = process.env.API_URL;

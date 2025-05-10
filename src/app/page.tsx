@@ -11,8 +11,6 @@ export default async function Home() {
 
   const timeline = timelineSchema.parse(data.data);
 
-  console.log(timeline);
-
   return (
     <div>
       <Title component={'h2'} variant={'h2'}>

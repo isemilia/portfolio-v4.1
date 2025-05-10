@@ -18,7 +18,10 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Emilia Sonder',
+  title: {
+    default: 'Emilia Sonder',
+    template: '%s | Emilia Sonder',
+  },
   description:
     "A frontend developer's portfolio featuring modern web projects, innovative UI solutions, and insights on web development.",
 };
