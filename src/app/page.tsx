@@ -4,12 +4,33 @@ import Highlight from '@/ui/elements/highlight';
 import Cta from '@/ui/components/cta';
 import { timelineSchema } from '@/shared/api/types/work-experience';
 import TimelineItem from '@/ui/components/timeline-item';
+import safeFetch from '@/shared/utils/functions/safe-fetch/safe-fetch';
 
 export default async function Home() {
-  const response = await fetch(`${process.env.API_URL}/api/work-experience`);
-  const data = await response.json();
+  const response = await safeFetch({
+    endpoint: '/work-experience',
+    schema: timelineSchema,
+  });
 
-  const timeline = timelineSchema.parse(data.data);
+  const renderTimeline = () => {
+    if (response.status === 'error') {
+      return <p>{response.message}</p>;
+    }
+
+    if (!response.data?.length) {
+      return <p>Could not find projects</p>;
+    }
+
+    return response.data.map((item) => (
+      <TimelineItem
+        key={item.date}
+        title={item.title}
+        description={item.description}
+        date={item.date}
+        chips={item.tags}
+      />
+    ));
+  };
 
   return (
     <div>
@@ -45,17 +66,7 @@ export default async function Home() {
       <Title component={'h2'} variant={'h2'} className={'!mt-10'}>
         Work experience
       </Title>
-      <div className={'space-y-[30px] mt-4'}>
-        {timeline.map((item) => (
-          <TimelineItem
-            key={item.date}
-            title={item.title}
-            description={item.description}
-            date={item.date}
-            chips={item.tags}
-          />
-        ))}
-      </div>
+      <div className={'space-y-[30px] mt-4'}>{renderTimeline()}</div>
     </div>
   );
 }

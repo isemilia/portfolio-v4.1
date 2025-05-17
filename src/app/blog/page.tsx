@@ -1,22 +1,29 @@
 import { postListSchema } from '@/shared/api/types/posts';
 import Post from '@/ui/components/post';
 import { Metadata } from 'next';
+import safeFetch from '@/shared/utils/functions/safe-fetch/safe-fetch';
 
 export const metadata: Metadata = {
   title: 'Blog',
 };
 
 const Page = async () => {
-  const url = process.env.API_URL;
+  const response = await safeFetch({
+    endpoint: '/bsky/posts',
+    schema: postListSchema,
+  });
 
-  const response = await fetch(`${url}/api/bsky/posts`);
-  const result: { data: unknown[] } = await response.json();
+  if (response.status === 'error') {
+    return <p>{response.message}</p>;
+  }
 
-  const posts = postListSchema.parse(result.data);
+  if (!response.data?.length) {
+    return <p>Could not find posts</p>;
+  }
 
   return (
     <div>
-      {posts.map((post) => (
+      {response.data.map((post) => (
         <Post key={post.id} {...post} />
       ))}
     </div>

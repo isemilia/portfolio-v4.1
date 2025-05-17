@@ -30,7 +30,7 @@ export type TComponent<
       ? {
           children: ReactNode;
         }
-      : {}) &
+      : object) &
     Props
 >;
 

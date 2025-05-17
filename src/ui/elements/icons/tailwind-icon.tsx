@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { TSVGComponent } from '@/shared/types/components';
 
 const TailwindIcon: TSVGComponent = ({ ...props }) => {
   return (
@@ -9,6 +9,7 @@ const TailwindIcon: TSVGComponent = ({ ...props }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      {...props}
     >
       <defs>
         <clipPath id="clip123_86">

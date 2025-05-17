@@ -1,24 +1,27 @@
-import Container from '@/ui/elements/container';
 import { projectsListSchema } from '@/shared/api/types/projects';
 import ProjectList from '@/features/widgets/project-list';
 import { Metadata } from 'next';
+import safeFetch from '@/shared/utils/functions/safe-fetch/safe-fetch';
 
 export const metadata: Metadata = {
   title: 'Projects',
 };
 
 const Page = async () => {
-  const response = await fetch(`${process.env.API_URL}/api/projects`);
-  const data = (await response.json()).data;
-  const projects = projectsListSchema.parse(data);
+  const response = await safeFetch({
+    endpoint: '/projects',
+    schema: projectsListSchema,
+  });
 
-  return (
-    <Container>
-      <div className={'mt-[30px]'}>
-        <ProjectList projects={projects} />
-      </div>
-    </Container>
-  );
+  if (response.status === 'error') {
+    return <p>{response.message}</p>;
+  }
+
+  if (!response.data?.length) {
+    return <p>Could not find projects</p>;
+  }
+
+  return <ProjectList projects={response.data} />;
 };
 
 export default Page;
