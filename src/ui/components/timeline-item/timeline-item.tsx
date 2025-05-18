@@ -26,7 +26,7 @@ const TimelineItem: TComponent<
         <Title component={'h3'} variant={'h3'}>
           {title}
         </Title>
-        <Text variant={'sm'} className={'mt-2'}>
+        <Text component={'div'} variant={'sm'} className={'mt-2'}>
           {description.split('\n').map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
           ))}
