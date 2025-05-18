@@ -5,6 +5,8 @@ import safeFetch from '@/shared/utils/functions/safe-fetch/safe-fetch';
 
 export const metadata: Metadata = {
   title: 'Projects',
+  description:
+    'Projects by Emilia Sonder built with Next.js, React, and TypeScript — performance-focused and structured with a custom Component-Focused Architecture, explained in an article.',
 };
 
 const Page = async () => {

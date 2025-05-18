@@ -5,6 +5,8 @@ import safeFetch from '@/shared/utils/functions/safe-fetch/safe-fetch';
 
 export const metadata: Metadata = {
   title: 'Blog',
+  description:
+    'Emilia Sonder’s blog — a collection of Bluesky posts on web development, design, and personal insights.',
 };
 
 const Page = async () => {

@@ -6,6 +6,8 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Skills',
+  description:
+    'Discover Emilia Sonder’s frontend development skills, including React, TypeScript, and modern web technologies.',
 };
 
 const Page = () => {

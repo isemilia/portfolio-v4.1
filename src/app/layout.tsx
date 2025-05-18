@@ -24,6 +24,19 @@ export const metadata: Metadata = {
   },
   description:
     "A frontend developer's portfolio featuring modern web projects, innovative UI solutions, and insights on web development.",
+  keywords: [
+    'Emilia Sonder',
+    'Emilia developer',
+    'frontend developer',
+    'Next.js portfolio',
+    'React developer',
+    'TypeScript portfolio',
+    'frontend project structure',
+    'frontend architecture',
+    'frontend portfolio',
+    'CFA frontend',
+    'Component-Focused Architecture',
+  ],
 };
 
 export default function RootLayout({
