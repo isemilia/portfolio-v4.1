@@ -8,7 +8,9 @@ export const GET = async () => {
     );
 
     return NextResponse.json({ data });
-  } catch {
+  } catch (error) {
+    console.error(error);
+
     return NextResponse.json(
       { error: 'Internal server error', status: 500 },
       { status: 500 },

@@ -6,7 +6,9 @@ export const GET = async () => {
     const data = await readJsonFile('src/app/api/projects/projects.json');
 
     return NextResponse.json({ data });
-  } catch {
+  } catch (error) {
+    console.error(error);
+    
     return NextResponse.json(
       { error: 'Internal server error', status: 500 },
       { status: 500 },
