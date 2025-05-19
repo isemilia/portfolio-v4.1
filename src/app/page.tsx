@@ -1,10 +1,10 @@
 import Title from '@/ui/elements/title';
 import Text from '@/ui/elements/text';
 import Highlight from '@/ui/elements/highlight';
-import Cta from '@/ui/components/cta';
 import { timelineSchema } from '@/shared/api/types/work-experience';
 import TimelineItem from '@/ui/components/timeline-item';
 import safeFetch from '@/shared/utils/functions/safe-fetch/safe-fetch';
+import AppCta from '@/features/widgets/app-cta';
 
 export default async function Home() {
   const response = await safeFetch({
@@ -56,13 +56,7 @@ export default async function Home() {
         </p>
         <p>Always open to exciting projects and new challenges!</p>
       </Text>
-      <Cta
-        title={'Got an idea?'}
-        button={{
-          label: "Let's chat!",
-        }}
-        className={'mt-[30px]'}
-      />
+      <AppCta className={'mt-[30px]'} />
       <Title component={'h2'} variant={'h2'} className={'!mt-10'}>
         Work experience
       </Title>

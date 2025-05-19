@@ -1,3 +1,5 @@
+'use client';
+
 import { TComponent } from '@/shared/types/components';
 import Button from '@/ui/elements/button';
 import clsx from 'clsx';

@@ -10,6 +10,7 @@ import '@/shared/global/model/global.scss';
 import Profile from '@/features/widgets/profile';
 import Container from '@/ui/elements/container';
 import Footer from '@/features/widgets/footer';
+import ToastProvider from '@/shared/providers/toast-provider';
 
 const poppins = Poppins({
   weight: ['400', '500', '700'],
@@ -49,7 +50,9 @@ export default function RootLayout({
       <body className={poppins.className}>
         <div className={classes.container} id={'root'}>
           <Profile />
-          <Container className={classes.children}>{children}</Container>
+          <ToastProvider>
+            <Container className={classes.children}>{children}</Container>
+          </ToastProvider>
           <Footer />
         </div>
       </body>
