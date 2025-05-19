@@ -3,12 +3,12 @@ import readJsonFile from '@/shared/utils/functions/read-json-file';
 
 export const GET = async () => {
   try {
-    const data = await readJsonFile('src/app/api/projects/projects.json');
+    const data = await readJsonFile('data/projects.json');
 
     return NextResponse.json({ data });
   } catch (error) {
     console.error(error);
-    
+
     return NextResponse.json(
       { error: 'Internal server error', status: 500 },
       { status: 500 },
