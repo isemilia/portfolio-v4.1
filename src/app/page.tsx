@@ -8,7 +8,7 @@ import AppCta from '@/features/widgets/app-cta';
 
 export default async function Home() {
   const response = await safeFetch({
-    endpoint: '/work-experience',
+    url: `${process.env.API_URL}/api/work-experience`,
     schema: timelineSchema,
   });
 
@@ -18,7 +18,7 @@ export default async function Home() {
     }
 
     if (!response.data?.length) {
-      return <p>Could not find projects</p>;
+      return <p>Could not find data</p>;
     }
 
     return response.data.map((item) => (

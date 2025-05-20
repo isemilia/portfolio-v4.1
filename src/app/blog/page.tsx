@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const Page = async () => {
   const response = await safeFetch({
-    endpoint: '/bsky/posts',
+    url: `${process.env.API_URL}/api/bsky/posts`,
     schema: postListSchema,
   });
 

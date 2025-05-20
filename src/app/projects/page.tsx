@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const Page = async () => {
   const response = await safeFetch({
-    endpoint: '/projects',
+    url: `${process.env.API_URL}/api/projects`,
     schema: projectsListSchema,
   });
 

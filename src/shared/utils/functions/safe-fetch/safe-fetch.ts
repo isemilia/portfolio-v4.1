@@ -1,21 +1,15 @@
 import { ZodSchema } from 'zod';
 
-const joinUrl = (base: string, path: string) => {
-  return `${base.replace(/\/+$/, '')}/api/${path.replace(/^\/+/, '')}`;
-};
-
 const safeFetch = async <T>({
-  endpoint,
+  url,
   schema,
   options,
 }: {
-  endpoint: string;
+  url: string;
   schema: ZodSchema<T>;
   options?: RequestInit;
 }) => {
   try {
-    const url = joinUrl(process.env.API_URL!, endpoint);
-
     const response = await fetch(url, options);
 
     if (!response.ok) {
@@ -34,7 +28,7 @@ const safeFetch = async <T>({
       data,
     };
   } catch (error) {
-    console.error(`Error while fetching ${endpoint}:`, error);
+    console.error(`Error while fetching ${url}:`, error);
 
     return {
       status: 'error',
