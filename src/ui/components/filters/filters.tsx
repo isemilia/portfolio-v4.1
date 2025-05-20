@@ -23,27 +23,34 @@ const Filters: TComponent<false, TFilterProps> = ({
   }, [value]);
 
   return (
-    <div className={clsx('flex items-center gap-[14px]', className)}>
+    <div
+      className={clsx(
+        'grid grid-cols-[20px_1fr] items-center gap-[14px] -mr-6 lg:mr-0',
+        className,
+      )}
+    >
       <FilterIcon />
-      {options.map((filter) => {
-        return (
-          <Chip
-            key={filter.name}
-            className={'cursor-pointer'}
-            variant={'outlined'}
-            onClick={() => {
-              if (!value) {
-                setCurrent(filter.name);
-              }
+      <div className={'flex items-center gap-[14px] overflow-auto max-w-full'}>
+        {options.map((filter) => {
+          return (
+            <Chip
+              key={filter.name}
+              className={'cursor-pointer'}
+              variant={'outlined'}
+              onClick={() => {
+                if (!value) {
+                  setCurrent(filter.name);
+                }
 
-              onChange?.(filter);
-            }}
-            color={current !== filter.name ? 'neutral' : 'primary'}
-          >
-            {filter.label}
-          </Chip>
-        );
-      })}
+                onChange?.(filter);
+              }}
+              color={current !== filter.name ? 'neutral' : 'primary'}
+            >
+              {filter.label}
+            </Chip>
+          );
+        })}
+      </div>
     </div>
   );
 };
