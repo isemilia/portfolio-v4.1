@@ -13,6 +13,11 @@ const Page = async () => {
   const response = await safeFetch({
     url: `${process.env.API_URL}/api/bsky/posts`,
     schema: postListSchema,
+    options: {
+      next: {
+        revalidate: 86400, // 1 day
+      },
+    },
   });
 
   if (response.status === 'error') {
