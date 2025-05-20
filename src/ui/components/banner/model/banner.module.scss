@@ -9,6 +9,8 @@
 
   z-index: 0;
 
+  border-radius: var(--rounded-sm) var(--rounded-sm) 0 0;
+
   @media (max-width: 575px) {
     height: 140px;
   }

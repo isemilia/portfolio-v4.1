@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: var(--rounded-sm);
 
   @media (max-width: 575px) {
     padding: 10px 24px 20px;
