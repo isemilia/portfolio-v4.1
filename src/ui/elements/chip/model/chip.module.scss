@@ -10,6 +10,7 @@
 
   background: rgba(var(--chip-color), 0.1);
   color: rgb(var(--chip-color));
+  transition: all .3s;
 
   &[data-color=primary] {
     --chip-color: 172, 117, 255;
@@ -24,7 +25,11 @@
   }
 
   &[data-variant=outlined] {
-    border: rgb(var(--chip-color)) 1px solid
+    border: rgb(var(--chip-color)) 1px solid;
+
+    &:hover {
+      background: rgba(var(--chip-color), .15);
+    }
   }
 
   &[data-size=sm] {

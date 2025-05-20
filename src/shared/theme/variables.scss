@@ -2,20 +2,34 @@
 :root {
   /* Primary Colors */
   --primary-main: #AC75FF;
+  --primary-main-rgb: 172, 117, 255;
+
   --primary-dark: #9253F5;
+  --primary-dark-rgb: 146, 83, 245;
+
   --primary-darker: #3C2959;
+  --primary-darker-rgb: 60, 41, 89;
 
   /* Secondary Colors */
   --secondary-main: #4CFCE1;
+  --secondary-main-rgb: 76, 252, 225;
+
   --secondary-dark: #09F9D0;
+  --secondary-dark-rgb: 9, 249, 208;
 
   /* Background Colors */
   --background-main: #151515;
+  --background-main-rgb: 21, 21, 21;
+
   --background-elevated: #202020;
+  --background-elevated-rgb: 32, 32, 32;
 
   /* Text Colors */
   --text-main: #F7F7FF;
+  --text-main-rgb: 247, 247, 255;
+
   --text-muted: #9D9DA4;
+  --text-muted-rgb: 157, 157, 164;
 }
 
 // text

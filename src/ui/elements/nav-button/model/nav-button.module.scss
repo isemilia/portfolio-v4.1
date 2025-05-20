@@ -6,6 +6,7 @@
   cursor: pointer;
   color: var(--text-muted);
   text-decoration: none;
+  transition: all 0.3s;
 
   &:hover {
     background: var(--background-elevated);

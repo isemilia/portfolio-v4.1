@@ -6,12 +6,18 @@
   font-weight: 500;
   line-height: 1;
 
+  transition: all .3s;
+
   &[data-variant='primary'] {
 
   }
 
   &[data-variant='secondary'] {
     border: 2px solid;
-    border-color: var(--text-primary),
+    border-color: var(--text-main);
+
+    &:hover {
+      background-color: rgba(var(--text-main-rgb), .15);
+    }
   }
 }
