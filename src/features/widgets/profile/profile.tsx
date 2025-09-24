@@ -3,7 +3,7 @@ import Title from '@/ui/elements/title';
 import Banner from '@/ui/components/banner';
 import Text from '@/ui/elements/text';
 import classes from './model/profile.module.scss';
-import photo from './media/photo.jpeg';
+import photo from './media/photo.jpg';
 import Container from '@/ui/elements/container';
 import AppLink from '@/ui/elements/app-link';
 import SuitcaseIcon from '@/ui/elements/icons/suitcase-icon';
