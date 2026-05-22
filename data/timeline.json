@@ -1,6 +1,6 @@
 [
   {
-    "title": "Middle+ front-end developer",
+    "title": "Front-end developer",
     "description": "Built and maintained the front end of a real-estate marketplace using Next.js, React, and TypeScript.\nImplemented key user flows.\nExtended and maintained the platform’s admin panel using React.\nContributed to frontend architecture decisions, structural patterns, and development standards.\nReviewed 5-8 pull requests weekly to ensure code quality and consistency across features.\nConducted technical interviews for frontend candidates.\nCollaborated with backend and product teams to define implementation details and deliver features in a fast-paced environment.",
     "date": "Apr 2025 - present",
     "tags": [
@@ -39,7 +39,7 @@
     ]
   },
   {
-    "title": "Middle front-end developer",
+    "title": "Front-end developer",
     "description": "Built the front end for a social assistance management app using React, TypeScript, and MUI.\nIntegrated RTK, RTK Query, and SSE for real-time updates.\nWrote component tests with Vitest & React Testing Library.\nContributed to an HRM app using Next.js, TypeScript, and Mantine UI.",
     "date": "Oct 2024 - Apr 2025",
     "tags": [
