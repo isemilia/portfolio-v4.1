@@ -10,6 +10,7 @@ import SuitcaseIcon from '@/ui/elements/icons/suitcase-icon';
 import GithubIcon from '@/ui/elements/icons/github-icon';
 import BlueskyIcon from '@/ui/elements/icons/bluesky-icon';
 import Navigation from '@/ui/components/navigation';
+import Image from 'next/image';
 
 const Profile: FC = () => {
   const links = [
@@ -25,7 +26,7 @@ const Profile: FC = () => {
       <Container>
         <div className={classes.info}>
           <div className={classes.avatar}>
-            <img src={photo.src} alt={'Avatar'} width={80} height={80} />
+            <Image src={photo.src} alt={'Avatar'} width={80} height={80} />
           </div>
           <div>
             <Title className={classes.title}>Emilia Sonder</Title>
