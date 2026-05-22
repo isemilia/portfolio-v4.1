@@ -39,16 +39,16 @@ export default async function Home() {
       </Title>
       <Text component={'div'} className={'mt-[16px]'}>
         <p>
-          I'm a frontend developer with 4+ years of experience specializing in{' '}
-          <Highlight>TypeScript</Highlight>, <Highlight>React</Highlight>, and{' '}
-          <Highlight>Next.js</Highlight>. I’ve worked on CRM and HRM systems,
-          marketplaces, UI libraries, and internal business tools.
+          I&apos;m a frontend developer with 4+ years of experience specializing
+          in <Highlight>TypeScript</Highlight>, <Highlight>React</Highlight>,
+          and <Highlight>Next.js</Highlight>. I’ve worked on CRM and HRM
+          systems, marketplaces, UI libraries, and internal business tools.
         </p>
         <p>
           I work with <Highlight>REST APIs</Highlight>,{' '}
           <Highlight>GraphQL</Highlight>, <Highlight>WebSocket</Highlight>, and{' '}
           <Highlight>SSE</Highlight> to support real-time and data-driven
-          interfaces. I've contributed to frontend architecture decisions,
+          interfaces. I&apos;ve contributed to frontend architecture decisions,
           reusable component systems, development standards, and code reviews,
           and participated in technical interviews for frontend candidates. I
           regularly collaborate with backend and product teams to define
