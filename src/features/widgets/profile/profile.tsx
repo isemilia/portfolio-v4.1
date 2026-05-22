@@ -29,14 +29,13 @@ const Profile: FC = () => {
           </div>
           <div>
             <Title className={classes.title}>Emilia Sonder</Title>
-            <Text>Front-end developer</Text>
+            <Text>Frontend developer</Text>
           </div>
         </div>
         <Text component={'div'}>
-          <p>Passionate about clean code and delightful user experiences ✨</p>
           <p>
-            Front-end developer. Back-end explorer. UX/UI enthusiast. Creative
-            thinker.
+            Building web applications with React, Next.js, and TypeScript,
+            focusing on clean architecture and maintainable UI systems
           </p>
         </Text>
         <div className={classes.links}>

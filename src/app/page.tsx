@@ -39,22 +39,22 @@ export default async function Home() {
       </Title>
       <Text component={'div'} className={'mt-[16px]'}>
         <p>
-          I’m a front-end developer with over three years of experience building
-          user-friendly, scalable applications with{' '}
+          I'm a frontend developer with 4+ years of experience specializing in{' '}
           <Highlight>TypeScript</Highlight>, <Highlight>React</Highlight>, and{' '}
-          <Highlight>Next.js</Highlight>. I enjoy crafting intuitive interfaces,
-          optimizing performance, and designing efficient system{' '}
-          <Highlight>architectures</Highlight>.
+          <Highlight>Next.js</Highlight>. I’ve worked on CRM and HRM systems,
+          marketplaces, UI libraries, and internal business tools.
         </p>
         <p>
-          I’ve worked on CRM and HRM platforms,{' '}
-          <Highlight>UI libraries</Highlight>, and business tools, integrating{' '}
-          <Highlight>REST API</Highlight>, <Highlight>GraphQL</Highlight>, and
-          real-time updates. While front-end development is my focus, I also
-          explore back-end technologies like Node.js, Express, and databases to
-          gain a deeper understanding of the overall development process.
+          I work with <Highlight>REST APIs</Highlight>,{' '}
+          <Highlight>GraphQL</Highlight>, <Highlight>WebSocket</Highlight>, and{' '}
+          <Highlight>SSE</Highlight> to support real-time and data-driven
+          interfaces. I've contributed to frontend architecture decisions,
+          reusable component systems, development standards, and code reviews,
+          and participated in technical interviews for frontend candidates. I
+          regularly collaborate with backend and product teams to define
+          implementation details and deliver features in a fast-paced
+          environment.
         </p>
-        <p>Always open to exciting projects and new challenges!</p>
       </Text>
       <AppCta className={'mt-[30px]'} />
       <Title component={'h2'} variant={'h2'} className={'!mt-10'}>

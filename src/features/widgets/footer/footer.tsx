@@ -5,9 +5,11 @@ import AppLink from '@/ui/elements/app-link';
 import Link from 'next/link';
 
 const Footer: TComponent = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className={classes.root}>
-      <Text className={'!mb-0'}>Emilia Sonder © 2025</Text>
+      <Text className={'!mb-0'}>Emilia Sonder © {currentYear}</Text>
       <div className={classes.nav}>
         <AppLink component={Link} href={'/'}>
           About
