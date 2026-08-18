@@ -17,6 +17,7 @@ const Chip: TComponent<true, TChipProps> = ({
     color === 'primary' || color === 'secondary' || color === 'neutral';
   return (
     <div
+      data-testid="chip"
       className={clsx(classes.chip, className)}
       data-size={size}
       data-variant={variant}
