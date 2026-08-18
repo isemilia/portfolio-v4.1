@@ -8,8 +8,8 @@ describe('formatDate', () => {
         expect(formatDate({ date: '08.25.18' })).toBe('25.08.2018');
     });
 
-    it('returns the original date if the date is invalid', () => {
-        expect(formatDate({ date: '28.08.2026' })).toBe('28.08.2026');
-        expect(formatDate({ date: 'foo' })).toBe('foo');
+    it('returns the \'Invalid Date\' if the date is invalid', () => {
+        expect(formatDate({ date: '28.08.2026' })).toBe('Invalid Date');
+        expect(formatDate({ date: 'foo' })).toBe('Invalid Date');
     })
 })

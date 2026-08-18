@@ -12,7 +12,7 @@ const formatDate = ({
   const _date = new Date(date);
 
   if (Number.isNaN(_date.getTime())) {
-    return date;
+    return 'Invalid Date';
   }
 
   switch (variant) {
