@@ -1,4 +1,3 @@
-import '@testing-library/dom';
 import userEvent from '@testing-library/user-event';
 import { screen } from '@testing-library/dom';
 import { render } from '@testing-library/react';
