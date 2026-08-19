@@ -1,22 +1,24 @@
-import { TComponent } from '@/shared/types/components';
+import { TDynamicProps } from '@/shared/types/components';
 import classes from './model/chip.module.scss';
-import { CSSProperties } from 'react';
+import { CSSProperties, ElementType } from 'react';
 import clsx from 'clsx';
 import hexToRgb from '@/shared/utils/functions/hex-to-rgb';
 import { TChipProps } from '@/ui/elements/chip/model/types';
 
-const Chip: TComponent<true, TChipProps> = ({
+const Chip = <T extends ElementType>({
   className,
   children,
   size = 'md',
   color = 'primary',
   variant = 'filled',
-  onClick,
-}) => {
-  const isThemeColor =
-    color === 'primary' || color === 'secondary' || color === 'neutral';
+  component,
+  ...props
+}: TDynamicProps<T, TChipProps>) => {
+  const Component = component || 'div';
+  const isThemeColor = ['primary', 'secondary', 'neutral'].includes(color);
+
   return (
-    <div
+    <Component
       data-testid="chip"
       className={clsx(classes.chip, className)}
       data-size={size}
@@ -29,10 +31,10 @@ const Chip: TComponent<true, TChipProps> = ({
             } as CSSProperties,
           }
         : {})}
-      onClick={onClick}
+      {...props}
     >
       {children}
-    </div>
+    </Component>
   );
 };
 

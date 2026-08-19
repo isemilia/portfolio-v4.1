@@ -36,6 +36,8 @@ const Filters: TComponent<false, TFilterProps> = ({
           return (
             <Chip
               key={filter.name}
+              role="button"
+              component={'button'}
               className={'cursor-pointer'}
               variant={'outlined'}
               onClick={() => {
