@@ -24,6 +24,7 @@ const Filters: TComponent<false, TFilterProps> = ({
 
   return (
     <div
+      data-testid="filters"
       className={clsx(
         'grid grid-cols-[20px_1fr] items-center gap-[14px] -mr-6 lg:mr-0',
         className,
@@ -35,6 +36,8 @@ const Filters: TComponent<false, TFilterProps> = ({
           return (
             <Chip
               key={filter.name}
+              role="button"
+              component={'button'}
               className={'cursor-pointer'}
               variant={'outlined'}
               onClick={() => {
