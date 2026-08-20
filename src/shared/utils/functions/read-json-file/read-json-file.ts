@@ -7,10 +7,16 @@ const readJsonFile = async (relativePath: string) => {
   if (fs.existsSync(filePath)) {
     const file = await fs.promises.readFile(filePath, 'utf-8');
 
-    return JSON.parse(file);
+    try {
+      return JSON.parse(file);
+    } catch (e) {
+      console.error(e);
+      throw new Error('File contains invalid JSON')
+    }
+
   }
 
-  throw new Error('File could not be read.');
+  throw new Error('File could not be read');
 };
 
 export default readJsonFile;
