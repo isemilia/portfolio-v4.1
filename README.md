@@ -6,5 +6,5 @@ documentation will be released soon.
 ## Tech Stack
 
 - **Next.js** (App Router)
-- **TypeScript**
+- **TypeScript** 
 - **SCSS Modules** (CSS variables for theming)
