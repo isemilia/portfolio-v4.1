@@ -1,0 +1,13 @@
+name: Test Workflow
+
+on: 
+  push: 
+
+jobs: 
+  test: 
+    runs-on: ubuntu-latest 
+    container: 
+      image: node:22-alpine
+    steps:
+      - name: Say hello
+        run: echo "Hello there"
