@@ -1,4 +1,4 @@
-name: Test Workflow
+name: Run tests
 
 on: 
   push: 
@@ -9,5 +9,5 @@ jobs:
     container: 
       image: node:22-alpine
     steps:
-      - name: Say hello
-        run: echo "Hello there"
+      - run: npm ci
+      - run: npm run test:once
