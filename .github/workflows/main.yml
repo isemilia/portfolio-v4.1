@@ -9,5 +9,6 @@ jobs:
     container: 
       image: node:22-alpine
     steps:
+      - uses: actions/checkout@v6
       - run: npm ci
       - run: npm run test:once
