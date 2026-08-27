@@ -9,5 +9,5 @@ jobs:
     container: 
       image: node:22-alpine
     steps:
-      - run: npm ci --legacy-peer-deps
+      - run: npm ci
       - run: npm run test:once
